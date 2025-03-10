@@ -14,14 +14,14 @@
 </script>
 
 <template>
-    <button class="button" :disabled="disabled">
+    <button :disabled="disabled">
         <i :class="icon"></i>
         <span class="tooltip" v-if="!disabled">{{ toolTip }}</span>
     </button>
 </template>
 
-<style>
-    .button {
+<style scoped>
+    button {
         text-transform: capitalize;
         padding: 0.6vh 1vh;
         border-radius: 0.8vh;
@@ -29,7 +29,7 @@
         background-color: var(--secondaryDarkColor);
     }
 
-    .button i {
+    button i {
         color: white;
         font-size: 1.2vh;
     }
@@ -45,12 +45,22 @@
         background-color: var(--secondaryDarkColor);
     }
 
-    .button:hover .tooltip {
+    button:hover .tooltip {
         display: block;
     }
 
-    .button:hover {
+    button:hover {
         background-color: rgba(255, 255, 255, 0.2);
         cursor: pointer;
+    }
+
+    button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    button:active {
+        border: none;
+        outline: none;
     }
 </style>
