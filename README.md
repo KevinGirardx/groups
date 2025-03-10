@@ -13,3 +13,7 @@ This script is currently setup to work with [Qbox](https://github.com/Qbox-proje
 If you want to also use the reputation system you need [Reputation](https://github.com/darktrovx/reputation)
 
 This update has no backwards compatibility and any existing group scripts will not work with it.
+
+
+![Image1](https://github.com/user-attachments/assets/0f9f0ad4-1fd0-48df-ac9d-4aa049b7b087)
+![Image2](https://github.com/user-attachments/assets/f04a6dd3-2b0e-44ff-aecb-df2fc46e77c2)
